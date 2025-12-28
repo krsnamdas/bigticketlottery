@@ -3,7 +3,7 @@ import { AzureOpenAI } from "openai";
 export async function generateContent(userPrompt) {
     // UPDATED: Your specific Azure details
     const endpoint = "https://krsna-mjo7rrmt-swedencentral.services.ai.azure.com/";
-    const apiKey = "GE82kq3cLlsH9MqtiSwoETvegrOYNXoUjGhCyvLM4iYKb0NliTHPJQQJ99BLACfhMk5XJ3w3AAAAACOG9dyp"; 
+    const apiKey = process.env.REACT_APP_AZURE_KEY; 
     const apiVersion = "2024-05-01-preview";
     const deployment = "gpt-4o-mini"; 
 
